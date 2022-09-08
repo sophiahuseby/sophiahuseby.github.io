@@ -14,6 +14,14 @@ body {
   h2 {
     font-size: 1.3em;
   }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
   
   p,ul,ol,dl,address {
     font-size: 1.1em;
