@@ -30,4 +30,11 @@ body {
   p, li, dd, dt, address {
     line-height: 1.5;
   }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
   
