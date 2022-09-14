@@ -21,7 +21,10 @@ html {
 .card footer{
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
     border-radius: 1.5em 1.5em 0 0;
-    padding-top: 3.125em;
+    padding-top: 0.625em;
+    padding-bottom:0.625em;
+    padding-right:0.625em;
+    padding-left:0.625em;
 }
   
 .card header{
