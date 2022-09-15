@@ -43,6 +43,11 @@ html {
     padding-block: 10px;
 }
 
+.card article{
+    height:120px;
+    background-color: rgba(0, 0, 0, 0.426);
+}
+
 .card header, footer{
     height: 45px;
     padding: 5px;
