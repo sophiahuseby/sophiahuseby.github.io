@@ -29,5 +29,14 @@ body {
   }
 
   a:hover {
-    text-decoration: none;
+    text-decoration: green;
+  }
+
+  ul{
+    background-color: #eeeeee;
+    border: 5px solid purple;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
