@@ -34,5 +34,31 @@ html {
   
 .card article img {
     float: right;
-    max-height: 60%
+    max-height: 120px;
+}
+
+.card article p{
+    color: white;
+    padding-left: 10px;
+    padding-block: 10px;
+}
+
+.card header, footer{
+    height: 45px;
+    padding: 5px;
+}
+
+h2{
+    font-size: 20px;
+    margin: 0;
+}
+
+p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.card footer p{
+    font-size: 15px;
+    line-height: 10px;
 }
