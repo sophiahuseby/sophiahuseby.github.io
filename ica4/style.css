@@ -33,6 +33,6 @@ html {
 }
   
 .card article img {
-    max-height: 80%
     float: right;
+    max-height: 80%
 }
