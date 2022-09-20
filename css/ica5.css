@@ -44,3 +44,11 @@
   }
   
   /* Your CSS below here */
+
+  .article img header{
+    position: top center;
+  }
+
+  .article img footer{
+    position: bottom center;
+  }
