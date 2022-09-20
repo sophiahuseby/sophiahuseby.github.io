@@ -32,5 +32,15 @@
     padding: 44px 0;
     color: white;
     text-shadow: 1px 1px 1px black;
+    background-image: logo.png;
   }
+
+  .class-demo{
+    font-size:0.25rem;
+  }
+
+  .class-demmo2{
+    font-size: 0.25em;
+  }
+  
   /* Your CSS below here */
