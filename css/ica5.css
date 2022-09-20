@@ -32,7 +32,6 @@
     padding: 44px 0;
     color: white;
     text-shadow: 1px 1px 1px black;
-    background-image: url("../img/logo.png");
   }
 
   .class-demo{
@@ -51,4 +50,11 @@
 
   .article img footer{
     position: bottom center;
+  }
+
+  h1{
+      background-image: url(".img/logo.png");
+      text-shadow:4px, 4px,black;
+      border-radius: 50%;
+
   }
