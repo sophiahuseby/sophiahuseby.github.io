@@ -16,14 +16,16 @@
     position: relative;
     background: top / contain
                 no-repeat
-                url(".img/top-image.png")
-
+                url("../img/top-image.png")
+ 
   }
+
   address {
     position: absolute;
     bottom: 8mm;
     right: 20mm;
   }
+
   h1 {
     position: absolute;
     top: 12mm;
@@ -57,7 +59,7 @@
   }
 
   h1{
-      background-image: url(".img/logo.png");
+      background-image: url("../img/logo.png");
       text-shadow:4px, 4px,black;
       border-radius: 50%;
 
