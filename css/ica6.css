@@ -13,6 +13,8 @@ body {
   }
   
   .logo {
+    display: block;
+    float: left;
     font-size: 200%;
     padding: 50px 20px;
     margin: 0 auto;
