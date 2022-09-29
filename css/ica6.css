@@ -8,6 +8,8 @@ body {
   img {
       max-width: 100%;
       display: block;
+      margin-right: 1em;
+      float: left;
   }
   
   .logo {
