@@ -17,13 +17,13 @@ body {
     color: rgb(124, 118, 103);
     margin-top: 0;
     font-size: 2em;
-    font-family: Avenir, sans-serif;
+    font-family: helvetica, sans-serif;
   }
 
   h2 {
     font-size: 1.5em;
     color: rgb(124, 118, 103);
-    font-style: Avenir, sans-serif;
+    font-style: helvetica, sans-serif;
   }
 
   .job-title {
