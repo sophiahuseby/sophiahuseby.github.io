@@ -14,7 +14,7 @@ body {
   }
 
   h1 {
-    color: darkgray;
+    color: slategrey;
     margin-top: 0;
     font-size: 2em;
     font-family: Avenir, sans-serif;
@@ -22,7 +22,7 @@ body {
 
   h2 {
     font-size: 1.5em;
-    color: darkgray;
+    color: slategrey;
     font-style: Avenir, sans-serif;
   }
 
