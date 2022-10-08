@@ -42,9 +42,9 @@ body {
 
   nav {
     position: sticky;
+    float: left;
     background-color: whitesmoke;
     padding: .5em;
-    margin-inline-end: 100%;
   }
   
   nav ul {
