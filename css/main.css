@@ -14,7 +14,7 @@ body {
   }
 
   h1 {
-    color: rgb(124, 118, 103);
+    color: darkred;
     margin-top: 0;
     font-size: 2em;
     font-family: helvetica, sans-serif;
@@ -22,7 +22,7 @@ body {
 
   h2 {
     font-size: 1.5em;
-    color: rgb(124, 118, 103);
+    color: darkred;
     font-style: helvetica, sans-serif;
   }
 
