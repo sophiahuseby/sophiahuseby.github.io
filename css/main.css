@@ -26,11 +26,6 @@ body {
     font-style: helvetica, sans-serif;
   }
 
-  .job-title {
-    color: whitesmoke;
-    font-weight: bold;
-  }
-
   a:link
   a:visited {
     color: lightgray;
