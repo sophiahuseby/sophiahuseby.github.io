@@ -86,14 +86,3 @@ a:hover{
   padding: 0;
 }
 
-ul{padding:0;
-  margin:0;
-  list-style-type:none}
-  
-.left{position:fixed;
-  top:45%;
-  left:200px;
-  -webkit-transform:translateY(-50%);
-  transform:translateY(-50%);
-  width:210px}
-  
