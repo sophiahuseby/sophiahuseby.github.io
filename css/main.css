@@ -3,7 +3,7 @@ body {
     font-weight: 300;
     background-color: #fff;
     color: #333;
-    font-family: Avenir, Helvetica, sans-serif;
+    font-family: Avenir, sans-serif;
     padding: 1em;
     margin: 0;
   }
@@ -16,7 +16,7 @@ body {
     color: black;
     margin-top: 0;
     font-size: 2em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Avenir, sans-serif;
   }
 
   h2 {
@@ -115,9 +115,9 @@ ul{padding:0;
   top:30px;
   -webkit-transform:translateX(-50%);
   transform:translateX(-50%)}
+}
 
-
-}.left #headshot{
+.left #headshot{
   position:relative;
   overflow:hidden;
   height:300px}
