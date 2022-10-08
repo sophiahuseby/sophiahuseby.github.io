@@ -42,12 +42,9 @@ body {
 
   nav {
     position: sticky;
-    text-align: left;
     background-color: whitesmoke;
     padding: .5em;
     margin-inline-end: 100%;
-    writing-mode: horizontal-tb;
-    direction: rtl;
   }
   
   nav ul {
