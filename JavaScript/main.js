@@ -1,18 +1,19 @@
-
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
+
 
 function randomValueFromArray(array){
   const random = Math.floor(Math.random()*array.length);
   return array[random];
 }
 
-const storyText = "It was 24 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in amazement for a few seconds, then :insertz:. Bob saw the whole thing, but was still surprised —  he weighs 300 pounds and it was a foggy day.";
 
-const insertX = ["Brad", "Chad", "Tray", "Kyle"];
-const insertY = ["Jamba Juice", "Spaghetti", "Folsom"];
-const insertZ = ["shook with intensity", "turned into a peacock", "transformed into a martian"];
+const storyText = "It was 64 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in awe for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx:, weighs 300 pounds and it was a cold day.";
+
+const insertX = ["Kyle", "Keith", "Brad"];
+const insertY = ["Jamba Juice", "Spaghetti", "Folsom Field"];
+const insertZ = ["shook violently", "transformed into a cat", "turned into a pony"];
 
 
 var newStory = storyText;
@@ -34,8 +35,8 @@ var zItem = randomValueFromArray(insertZ);
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300);
     const temperature =  Math.round(94);
-    const centigrade = (temperature - 32) * 5 / 9;
-    const stone = weight / 14;
+    const centigrade = (temperature-32) *5/9;
+    const stone = weight/14;
     newStory = newStory.replace("94 fahrenheit", Math.floor(centigrade) + " celsius");
     newStory = newStory.replace("300 pounds", Math.floor(stone) + " stone");
 
