@@ -10,8 +10,8 @@ function randomValueFromArray(array){
 
 const storyText = "It was 24 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in amazement for a few seconds, then :insertz:. Bob saw the whole thing, but was still surprised — :insertx:, weighs 300 pounds and it was a foggy day.";
 
-const insertX = ["Newt", "Barry", "Sky"];
-const insertY = ["Shake Shack", "Pizza Pie", "UMC"];
+const insertX = ["Brad", "Chad", "Tray", "Kyle"];
+const insertY = ["Jamba Juice", "Spaghetti", "Folsom"];
 const insertZ = ["shook with intensity", "turned into a peacock", "transformed into a martian"];
 
 
@@ -34,8 +34,8 @@ var zItem = randomValueFromArray(insertZ);
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300);
     const temperature =  Math.round(94);
-    const centigrade = (temperature-32) *5/9;
-    const stone = weight/14;
+    const centigrade = (temperature - 32) * 5 / 9;
+    const stone = weight / 14;
     newStory = newStory.replace("94 fahrenheit", Math.floor(centigrade) + " celsius");
     newStory = newStory.replace("300 pounds", Math.floor(stone) + " stone");
 
