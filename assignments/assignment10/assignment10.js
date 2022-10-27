@@ -1,29 +1,26 @@
-const employees = [
-
-        {
-            name : "Sam",
-            department : "Tech",
-            designation : "Manager",
-            salary : "400000",
-            raise : "true"
-        },
+let Sam = {
+    name : "Sam", 
+    department : "Tech",
+    designation : "Manager",
+    salary : 40000,
+    raise: true
+    }; 
     
-        {
-            name : "Mary",
-            department : "Finance",
-            designation : "Trainee",
-            salary : "18500",
-            raise : "true"
-        },
+    let Mary = {
+    name : "Mary", 
+    department : "Finance",
+    designation : "Trainee",
+    salary : 18500,
+    raise : true
+    };
     
-        {
-            name : "Bill",
-            department : "HR",
-            designation : "Executive",
-            salary : "21200",
-            raise : "false"
-        }
-    ];
+    let Bill = {
+    name : "Bill", 
+    department : "HR",
+    designation : "Executive",
+    salary : 21200,
+    raise : false
+    };
 
 console.log("Problem 1", [Sam, Mary, Bill]);
 
@@ -40,8 +37,8 @@ company.employees.push({
     name : "Anna",
     department : "Tech",
     designation : "HR",
-    salary : "25600",
-    raise : "false"
+    salary : 25600,
+    raise : false
 });
 
 console.log("Problem 3", company);
