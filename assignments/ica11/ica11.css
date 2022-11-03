@@ -169,7 +169,17 @@ html {
   p{
     margin: 0;
     font-family: Avenir, sans-serif;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background: #c6c6c6;
+    padding: 55px;
+    text-align:center;
   }
+
+
 
   h1 {
     color: darkred;
