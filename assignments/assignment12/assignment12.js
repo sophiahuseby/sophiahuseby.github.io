@@ -1,27 +1,4 @@
 
-// Gets user input
-var name = prompt("What is your name?");
-var num = prompt("What is your favorite number? ");
-
-// Uses user input to print out information
-println("Hello " + name + "!");
-println(num + "?! That's my favorite number too!");
-
-// Prints out the variable type
-println("Name is a " + typeof name);
-println("Num is a " + typeof num);
-
-/*
-var num1 = prompt("what is " + randomNum1 + " - first number ");
-var num2 = prompt("what is " + randomNum2 + "- second number ");
-var num3 = prompt("what is " + randomNum3 + " - third number ");
-var num4 = prompt("what is " + randomNum4 + "- fourth number ");
-var num5 = prompt("what is " + randomNum5 + "- fifth number ");
-var num6 = prompt("what is " + randomNum6 + "- sixth number ");
-var num7 = prompt("what is " + randomNum7 + "- seventh number ");
-var num8 = prompt("what is " + randomNum8 + "- eighth number ");
-var num9 = prompt("what is " + randomNum9 + "- ninth number ");
-
 
 randomNum1 = randomNumber(20,100);
 randomNum2 = randomNumber(20,100);
@@ -32,6 +9,46 @@ randomNum6 = randomNumber(20,100);
 randomNum7 = randomNumber(20,100);
 randomNum8 = randomNumber(20,100);
 randomNum9 = randomNumber(20,100);
+randomNum10 = randomNumber(20,100);
+
+let num1 = window.prompt("what is " + randomNum1 + " - first number ");
+let num2 = window.prompt("what is " + randomNum2 + "- second number ");
+let num3 = window.prompt("what is " + randomNum3 + " - third number ");
+let num4 = window.prompt("what is " + randomNum4 + "- fourth number ");
+let num5 = window.prompt("what is " + randomNum5 + "- fifth number ");
+let num6 = window.prompt("what is " + randomNum6 + "- sixth number ");
+let num7 = window.prompt("what is " + randomNum7 + "- seventh number ");
+let num8 = window.prompt("what is " + randomNum8 + "- eighth number ");
+let num9 = window.prompt("what is " + randomNum9 + "- ninth number ");
+let num10 = window.prompt("what is " + randomNum10 + "- tenth number ");
+
+phone1 = randomNum1 - num1;
+phone2 = randomNum2 - num2;
+phone3 = randomNum3 - num3;
+phone4 = randomNum4 - num4;
+phone5 = randomNum5 - num5;
+phone6 = randomNum6 - num6;
+phone7 = randomNum7 - num7;
+phone8 = randomNum8 - num8;
+phone9 = randomNum9 - num9;
+phone10 = randomNum10 - num10;
+
+var outputInt = 
+phone1 * 10 + (phone2 * 10) + (phone3*10);
+outputInt = phone1 * 10 + phone2;
+outputInt = outputInt * 10 + phone3;
+outputInt = outputInt * 10 + phone4;
+outputInt = outputInt * 10 + phone5;
+outputInt = outputInt * 10 + phone6;
+outputInt = outputInt * 10 + phone7;
+outputInt = outputInt * 10 + phone8;
+outputInt = outputInt * 10 + phone9;
+outputInt = outputInt * 10 + phone10;
+
+
+console.log(outputInt);
+
+println("Is " + outputInt + "your phone number? If yes, please press finalize, if no, please press reset and type number in again.")
 
 function check(){
     console.log('test');
@@ -81,15 +98,4 @@ const randomButton = document.querySelector('.finalize-button').addEventListener
 
 
 
-outputInt = num1 * 10 + num2;
-outputInt = outputInt * 10 + num3;
-outputInt = outputInt * 10 + num4;
-outputInt = outputInt * 10 + num5;
-outputInt = outputInt * 10 + num6;
-outputInt = outputInt * 10 + num7;
-outputInt = outputInt * 10 + num8;
-outputInt = outputInt * 10 + num9;
 
-println("Is " + outputInt + "your phone number? If yes, please press finalize, if no, please press reset and type number in again.")
-
-*/
