@@ -11,7 +11,7 @@ randomNum8 = randomNumber(20,100);
 randomNum9 = randomNumber(20,100);
 randomNum10 = randomNumber(20,100);
 
-let num1 = window.prompt("what is " + randomNum1 + " - first number ");
+let num1 = window.prompt("what is " + randomNum1 + "- first number ");
 let num2 = window.prompt("what is " + randomNum2 + "- second number ");
 let num3 = window.prompt("what is " + randomNum3 + " - third number ");
 let num4 = window.prompt("what is " + randomNum4 + "- fourth number ");
@@ -33,8 +33,17 @@ phone8 = randomNum8 - num8;
 phone9 = randomNum9 - num9;
 phone10 = randomNum10 - num10;
 
-var outputInt = 
-phone1 * 10 + (phone2 * 10) + (phone3*10);
+function random(){
+    outputInt = randomNumber(30, 100);
+    output.textContent = outputInt;
+}
+
+function randomNumber(min, max){
+    const num = Math.floor(Math.random() * (max - min + 1)) + min;
+    return num;
+}
+
+/*
 outputInt = phone1 * 10 + phone2;
 outputInt = outputInt * 10 + phone3;
 outputInt = outputInt * 10 + phone4;
@@ -75,15 +84,7 @@ function minus(number){
     output.textContent = outputInt;}
 }
 
-function random(){
-    outputInt = randomNumber(30, 100);
-    output.textContent = outputInt;
-}
 
-function randomNumber(min, max){
-    const num = Math.floor(Math.random() * (max - min + 1)) + min;
-    return num;
-}
 
 const output = document.querySelector('.output');
 let outputInt = parseInt(output.textContent);
@@ -98,4 +99,4 @@ const randomButton = document.querySelector('.finalize-button').addEventListener
 
 
 
-
+*/
