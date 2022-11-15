@@ -11,16 +11,16 @@ randomNum8 = randomNumber(20,100);
 randomNum9 = randomNumber(20,100);
 randomNum10 = randomNumber(20,100);
 
-let num1 = window.prompt("what is " + randomNum1 + "- your first number = ");
-let num2 = window.prompt("what is " + randomNum2 + "- your second number = ");
+let num1 = window.prompt("what is " + randomNum1 + " - your first number = ");
+let num2 = window.prompt("what is " + randomNum2 + " - your second number = ");
 let num3 = window.prompt("what is " + randomNum3 + " - your third number = ");
-let num4 = window.prompt("what is " + randomNum4 + "- your fourth number = ");
-let num5 = window.prompt("what is " + randomNum5 + "- your fifth number = ");
-let num6 = window.prompt("what is " + randomNum6 + "- your sixth number = ");
-let num7 = window.prompt("what is " + randomNum7 + "- your seventh number = ");
-let num8 = window.prompt("what is " + randomNum8 + "- your eighth number = ");
-let num9 = window.prompt("what is " + randomNum9 + "- your ninth number = ");
-let num10 = window.prompt("what is " + randomNum10 + "- your tenth number =");
+let num4 = window.prompt("what is " + randomNum4 + " - your fourth number = ");
+let num5 = window.prompt("what is " + randomNum5 + " - your fifth number = ");
+let num6 = window.prompt("what is " + randomNum6 + " - your sixth number = ");
+let num7 = window.prompt("what is " + randomNum7 + " - your seventh number = ");
+let num8 = window.prompt("what is " + randomNum8 + " - your eighth number = ");
+let num9 = window.prompt("what is " + randomNum9 + " - your ninth number = ");
+let num10 = window.prompt("what is " + randomNum10 + " - your tenth number =");
 
 phone1 = randomNum1 - num1;
 phone2 = randomNum2 - num2;
