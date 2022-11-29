@@ -1,5 +1,4 @@
 
-
 randomNum1 = randomNumber(20,100);
 randomNum2 = randomNumber(20,100);
 randomNum3 = randomNumber(20,100);
@@ -43,6 +42,7 @@ function randomNumber(min, max){
     return num;
 }
 
+string newString = 
 
 
 /*
