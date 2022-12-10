@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sophia Huseby Portfolio</title>
+    <link rel="stylesheet" href="final.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrityp="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Yellowtail';font-size: 16px;
+        }
+        </style>
+
+    <link href="//fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <style>
+        body{
+            font-family:'Damion'; font-size: 16px;
+        }
+        </style>
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins:wght@600&display=swap' rel='stylesheet'>
+    <style>
+    body {
+       font-family: 'Poppins';font-size: 22px;
+    }
+
+</style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbarclass">
+        <a href="#home" id="navbarlogo">sophia huseby.</a>
+        <div class="navbarswitch" id="mobilemenu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbarmenu">
+            <li class="navbaritem">
+                <a href="../index.html" class="navbarpages" id="home">home</a>
+            </li>
+            <li class="navbaritem">
+                <a href="../about.html" class="navbarpages" id="about">about</a>
+            </li>
+            <li class="navbaritem">
+                <a href="../conceptart.html" class="navbarpages" id="conceptart">concept art</a>
+            </li>
+            <li class="navbaritem">
+                <a href="../design.html" class="navbarpages" id="design">design</a>
+            </li>
+            <li class="navbaritem">
+                <a href="../contact.html" class="navbarpages" id="contact">contact</a>
+            </li>
+            <li class="navbaritem">
+              <a href="../tarot.html" class="navbarpages" id="tarot">tarot</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+      <div class="tarot" id="tarot">
+        <h1>Would you like your love life tarot reading? </h1>
+
+          <p> These are your personal cards, please take a moment and click the one that resonates most with you </p>
+
+          <div class="personalCards">
+          <button onclick='document.getElementById("personal").innerHTML = "YOUR PERSONAL READING: You find yourself to be a safe and transitional partner, who avoids the taboo."' id="hierophant"><img src="finalimg/thehierophant.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("personal").innerHTML = "YOUR PERSONAL READING: You feel optimistic about your love life, and are currently working through healing past wounds."' id="star"><img src="finalimg/thestar.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("personal").innerHTML = "YOUR PERSONAL READING: You may find yourself to be a fearless and courageous lover, but it may be hard for you to commit sometimes."' id="knightofwands"><img src="finalimg/knightofwands.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("personal").innerHTML = "YOUR PERSONAL READING: It may be difficult to choose between lovers, or even finding a proper work life and love balance."' type="fortune" id="twoofswords"><img src="finalimg/twoofswords.png" alt="buttonpng"></button>
+          </div>
+          <p> These are your partner cards, please take a moment and click the one that resonates most with you </p>
+
+          <div class="personalCards">
+          <button onclick='document.getElementById("partner").innerHTML = "YOUR PARTNER READING: You have high standards for romantic partners, especially intellectually."' id="kingofswords"><img src="finalimg/kingofswords.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("partner").innerHTML = "YOUR PARTNER READING: You seek a stable, abundant and nurturing partner who will support you in your life endeavors. ."' id="queenofpentacles"><img src="finalimg/queenofpentacles.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("partner").innerHTML = "YOUR PARTNER READING: You may find that stress can create issues within your relationships."' id="tenofwands"><img src="finalimg/tenofwands.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("partner").innerHTML = "YOUR PARTNER READING: You may currently have minor relationships in your life that will end in your search for a real serious relationship."' id="thetower"><img src="finalimg/thetower.png" alt="buttonpng"></button>
+          </div>
+          
+          <p> These are your future cards, please take a moment and click the one that resonates most with you </p>
+
+          <div class="personalCards">
+          <button onclick='document.getElementById("future").innerHTML = "YOUR FUTURE READING: You may be struggling a lot in life right now, dealing with a breakup or argument with someone you love."' id="threeofswords"><img src="finalimg/threeofswords.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("future").innerHTML = "YOUR FUTURE READING: You are finding new feelings and an emotional awakening. "' id="aceofcups"><img src="finalimg/aceofcups.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("future").innerHTML = "YOUR FUTURE READING: You need to grieve relationships you have lost in order to move forward with future relationships. "' id="fiveofcups"><img src="finalimg/fiveofcups.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("future").innerHTML = "YOUR FUTURE READING: You may experience changes in your relationships, and potentially an ending of a significant relationship in your life. "' id="death"><img src="finalimg/death.png" alt="buttonpng"></button>
+        </div>
+
+        <div class="reading">
+          <p id="personal">YOUR PERSONAL READING: </p>
+          <p id="partner">YOUR PARTNER READING: </p>
+          <p id="future">YOUR FUTURE READING: </p>
+        </div>
+ 
+      </div>
+    </div>
+
+    <script src="final.js"></script>
+
+</body>
+</html>
