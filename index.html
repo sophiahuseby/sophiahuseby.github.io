@@ -32,19 +32,6 @@
        font-family: 'Poppins';font-size: 22px;
     }
 
-    .hierophant{visibility: hidden;}
-    .star{visibility: hidden;}
-    .knightOfWands{visibility: hidden;}
-    .twoOfSwordsClass{visibility: hidden;}
-    .kingOfSwords{visibility: hidden;}
-    .queenOfPentacles{visibility: hidden;}
-    .tenOfWands{visibility: hidden;}
-    .theTower{visibility: hidden;}
-    .threeOfSwords{visibility: hidden;}
-    .aceOfCups{visibility: hidden;}
-    .fiveOfCups{visibility: hidden;}
-    .death{visibility: hidden;}
-
 </style>
   </head>
   <body>
@@ -151,33 +138,42 @@
 
 
       <div class="tarot" id="tarot">
-        <img src="crystalball.gif">
-        <div class="tarotCardContent">
-          <div class="twoOfSwordsClass">
-            <p class="personal">It may be difficult to choose between lovers, or even finding a proper work life and love balance. </p>
+        <h1>Would you like your love life tarot reading? </h1>
+
+          <p> These are your personal cards, please take a moment and click the one that resonates most with you </p>
+
+          <div class="personalCards">
+          <button onclick='document.getElementById("personal").innerHTML = "YOUR PERSONAL READING: You find yourself to be a safe and transitional partner, who avoids the taboo."' id="hierophant"><img src="thehierophant.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("personal").innerHTML = "YOUR PERSONAL READING: You feel optimistic about your love life, and are currently working through healing past wounds."' id="star"><img src="thestar.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("personal").innerHTML = "YOUR PERSONAL READING: You may find yourself to be a fearless and courageous lover, but it may be hard for you to commit sometimes."' id="knightofwands"><img src="knightofwands.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("personal").innerHTML = "YOUR PERSONAL READING: It may be difficult to choose between lovers, or even finding a proper work life and love balance."' type="fortune" id="twoofswords"><img src="twoofswords.png" alt="buttonpng"></button>
           </div>
+          <p> These are your partner cards, please take a moment and click the one that resonates most with you </p>
 
-          <button type="fortune" onClick="unhideHierophant()" id="hierophant"><img src="thehierophant.png" alt="buttonpng"></button>
-          <button type="fortune" onClick="star()" id="star"><img src="thestar.png" alt="buttonpng"></button>
-          <button type="fortune" id="knightofwands"><img src="knightofwands.png" alt="buttonpng"></button>
-          <button onclick ="twoOfSwords()" type="fortune" id="twoofswords"><img src="twoofswords.png" alt="buttonpng"></button>
-          <button type="fortune" id="kingofswords"><img src="kingofswords.png" alt="buttonpng"></button>
-          <button type="fortune" id="queenofpentacles"><img src="queenofpentacles.png" alt="buttonpng"></button>
-          <button type="fortune" id="tenofwands"><img src="tenofwands.png" alt="buttonpng"></button>
-          <button type="fortune" id="thetower"><img src="thetower.png" alt="buttonpng"></button>
-          <button type="fortune" id="threeofswords"><img src="threeofswords.png" alt="buttonpng"></button>
-          <button type="fortune" id="aceofcups"><img src="aceofcups.png" alt="buttonpng"></button>
-          <button type="fortune" id="fiveofcups"><img src="fiveofcups.png" alt="buttonpng"></button>
-          <button type="fortune" id="death"><img src="death.png" alt="buttonpng"></button>
-          <button onclick="clear()">Clear</button>
+          <div class="personalCards">
+          <button onclick='document.getElementById("partner").innerHTML = "YOUR PARTNER READING: You have high standards for romantic partners, especially intellectually."' id="kingofswords"><img src="kingofswords.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("partner").innerHTML = "YOUR PARTNER READING: You seek a stable, abundant and nurturing partner who will support you in your life endeavors. ."' id="queenofpentacles"><img src="queenofpentacles.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("partner").innerHTML = "YOUR PARTNER READING: You may find that stress can create issues within your relationships."' id="tenofwands"><img src="tenofwands.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("partner").innerHTML = "YOUR PARTNER READING: You may currently have minor relationships in your life that will end in your search for a real serious relationship."' id="thetower"><img src="thetower.png" alt="buttonpng"></button>
+          </div>
+          
+          <p> These are your future cards, please take a moment and click the one that resonates most with you </p>
+
+          <div class="personalCards">
+          <button onclick='document.getElementById("future").innerHTML = "YOUR FUTURE READING: You may be struggling a lot in life right now, dealing with a breakup or argument with someone you love."' id="threeofswords"><img src="threeofswords.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("future").innerHTML = "YOUR FUTURE READING: You are finding new feelings and an emotional awakening. "' id="aceofcups"><img src="aceofcups.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("future").innerHTML = "YOUR FUTURE READING: You need to grieve relationships you have lost in order to move forward with future relationships. "' id="fiveofcups"><img src="fiveofcups.png" alt="buttonpng"></button>
+          <button onclick='document.getElementById("future").innerHTML = "YOUR FUTURE READING: You may experience changes in your relationships, and potentially an ending of a significant relationship in your life. "' id="death"><img src="death.png" alt="buttonpng"></button>
         </div>
-        
-        
 
+        <div class="reading">
+          <p id="personal">YOUR PERSONAL READING: </p>
+          <p id="partner">YOUR PARTNER READING: </p>
+          <p id="future">YOUR FUTURE READING: </p>
+        </div>
 
-        
-
-
+        <button onclick="clear()"> New Reading </button>
+ 
       </div>
     </div>
 

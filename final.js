@@ -9,33 +9,35 @@ const mobileNav = () => {
 
 myNav.addEventListener('click', mobileNav);
 
-const box = document.getElementsByClassName('box')[0];
 
-function twoOfSwords() {
-    var show = document.getElementsByClassName("twoOfSwordsClass");
-    if(show[0].offsetWidth > 0 && show[0].offsetHeight > 0) {
-        show[0].style.visibility = "visible";
-    }
+
+const personal = document.getElementById('personal');
+
+const change_personal_text = (text) => app.innerText = text;
+
+change_personal_text('YOUR PERSONAL READING: ');
+console.log(app.innerHtml) // =>  <div id="app">Text you want</div>
+
+
+
+const partner = document.getElementById('partner');
+
+const change_partner_text = (text) => app.innerText = text;
+
+change_partner_text('YOUR PARTNER READING: ');
+console.log(app.innerHtml) // =>  <div id="app">Text you want</div>
+
+
+const app = document.getElementById('future');
+
+const change_future_text = (text) => app.innerText = text;
+
+change_future_text('YOUR FUTURE READING: ');
+console.log(app.innerHtml) // =>  <div id="app">Text you want</div>
+
+function clear(){
+document.getElementById("personal").innerHTML = "PERSONAL READING: "
+document.getElementById("partner").innerHTML = "PARTNER READING: "
+document.getElementById("future").innerHTML = "FUTURE READING: "
+
 }
-
-function unhide() {
-    var show = document.getElementsByClassName("twoOfSwordsClass");
-    if(show[0].offsetWidth > 0 && show[0].offsetHeight > 0) {
-        show[0].style.visibility = "visible";
-    }
-}
-
-function unhide() {
-    var show = document.getElementsByClassName("twoOfSwordsClass");
-    if(show[0].offsetWidth > 0 && show[0].offsetHeight > 0) {
-        show[0].style.visibility = "visible";
-    }
-}
-
-function unhide() {
-    var show = document.getElementsByClassName("twoOfSwordsClass");
-    if(show[0].offsetWidth > 0 && show[0].offsetHeight > 0) {
-        show[0].style.visibility = "visible";
-    }
-}
-

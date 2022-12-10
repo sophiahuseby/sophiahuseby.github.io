@@ -643,3 +643,10 @@ a:hover, a:visited, a:link, a:active
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+
+.personalCards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
