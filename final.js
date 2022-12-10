@@ -10,9 +10,6 @@ const mobileNav = () => {
 myNav.addEventListener('click', mobileNav);
 
 
-
-
-
 const personal = document.getElementById('personal');
 
 const change_personal_text = (text) => app.innerText = text;
