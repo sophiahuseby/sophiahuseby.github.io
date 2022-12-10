@@ -637,7 +637,7 @@ a:hover, a:visited, a:link, a:active
   }
 }
 
-.designcontent {
+.tarotContent {
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
