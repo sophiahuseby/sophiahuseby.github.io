@@ -1,16 +1,3 @@
-const myNav = document.querySelector('#mobilemenu')
-const navPages = document.querySelector('.navbarmenu')
-
-const mobileNav = () => {
-    myNav.classList.toggle('is-current')
-    navPages.classList.toggle('current')
-}
-
-myNav.addEventListener('click', mobileNav);
-
-
-/* TAROT GAME CODING */
-
 const personalText = "";
 const partnerText = "";
 const futureText = "";
@@ -48,6 +35,3 @@ randomize.addEventListener('click', result);
 randomize.addEventListener('click', result);
 randomize.addEventListener('click', result);
 randomize.addEventListener('click', result);
-
-
-
