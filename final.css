@@ -473,7 +473,7 @@ a:hover, a:visited, a:link, a:active
 
 @media screen and (max-width: 1300px) {
   .designcontent {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
