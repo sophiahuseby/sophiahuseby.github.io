@@ -387,8 +387,6 @@ a:hover, a:visited, a:link, a:active
 
 .conceptartimg {
   margin: 10px;
-  height: 300px;
-  width: 300px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -448,12 +446,14 @@ a:hover, a:visited, a:link, a:active
 
 .designcontent {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
 .designimg {
   margin: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
   height: 300px;
   width: 300px;
   border-radius: 4px;
