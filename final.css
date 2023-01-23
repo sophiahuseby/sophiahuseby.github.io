@@ -528,3 +528,16 @@ a:hover, a:visited, a:link, a:active
     font-size: 12px;
     margin-bottom: 15px;
 }
+
+/* BLOG STYLING */
+
+.blogtextcontent h1 {
+  font-size: 25px;
+  background-color: black;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 32px;
+}
