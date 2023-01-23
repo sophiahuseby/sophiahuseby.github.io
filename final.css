@@ -531,6 +531,29 @@ a:hover, a:visited, a:link, a:active
 
 /* BLOG STYLING */
 
+.blog {
+  background:rgb(247, 245, 240);
+  padding: 10rem 0;
+}
+
+.blogcontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.blogtextcontent {
+  color: black;
+  width: 100%;
+}
+
 .blogtextcontent h1 {
   font-size: 25px;
   background-color: black;
