@@ -533,7 +533,7 @@ a:hover, a:visited, a:link, a:active
 
 .blog {
   background:rgb(247, 245, 240);
-  padding: 10rem 0;
+  padding: 200px 0;
 }
 
 .blogcontent {
@@ -563,4 +563,45 @@ a:hover, a:visited, a:link, a:active
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1100px) {
+  .blogcontent{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+  }
+
+  .blogtextcontent {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .blogtextcontent h1 {
+    font-size: 25px;
+    margin-top: 2rem;
+  }
+
+  .blogtextcontent p {
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+  .blogtextcontent h1 {
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+
+  .blogtextcontent p {
+    margin-top: 2rem;
+  }
 }
