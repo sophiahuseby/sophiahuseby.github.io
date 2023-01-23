@@ -531,9 +531,20 @@ a:hover, a:visited, a:link, a:active
 
 /* BLOG STYLING */
 
-.blog {
+.objectblog {
   background:rgb(247, 245, 240);
   padding: 200px 0;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  padding: 30px;
 }
 
 .blogcontent {
