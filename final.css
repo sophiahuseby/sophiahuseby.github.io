@@ -616,3 +616,92 @@ a:hover, a:visited, a:link, a:active
     margin-top: 2rem;
   }
 }
+
+
+/* LABS STYLING */
+
+.lab {
+  background:white;
+  padding: 50px 0;
+}
+
+.lab1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  padding: 30px;
+}
+
+.labcontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.labtextcontent {
+  color: black;
+  width: 100%;
+}
+
+.labtextcontent h1 {
+  font-size: 25px;
+  background-color: black;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1100px) {
+  .labcontent{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+  }
+
+  .labtextcontent {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .labtextcontent h1 {
+    font-size: 25px;
+    margin-top: 2rem;
+  }
+
+  .labtextcontent p {
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+  .labtextcontent h1 {
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+
+  .labtextcontent p {
+    margin-top: 2rem;
+  }
+}
