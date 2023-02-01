@@ -529,6 +529,11 @@ a:hover, a:visited, a:link, a:active
     margin-bottom: 15px;
 }
 
+.normaltext {
+  font-size: 18px;
+  margin-bottom:18px;
+}
+
 /* BLOG STYLING */
 
 .objectblog {
@@ -704,4 +709,9 @@ a:hover, a:visited, a:link, a:active
   .labtextcontent p {
     margin-top: 2rem;
   }
+}
+
+.imageMargin {
+  margin-bottom: 18px;
+  
 }
