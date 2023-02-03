@@ -641,6 +641,17 @@ a:hover, a:visited, a:link, a:active
   padding: 30px;
 }
 
+.lab2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  padding: 30px;
+}
+
 .labcontent {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -674,15 +685,15 @@ a:hover, a:visited, a:link, a:active
   .labcontent{
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     width: 100%;
     margin: 0 auto;
     height: 90%;
   }
 
   .labtextcontent {
-    text-align: center;
+    text-align: left;
     margin-bottom: 4rem;
   }
 
@@ -700,6 +711,16 @@ a:hover, a:visited, a:link, a:active
 
 
 @media screen and (max-width: 480px) {
+
+  .labcontent{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+  }
 
   .labtextcontent h1 {
     font-size: 1rem;
