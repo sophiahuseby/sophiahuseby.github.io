@@ -74,13 +74,33 @@
             <p class="normaltext"> The materials that I used for this lab are an arduino (elegoo) uno R3 controller board, usb cable, usb adapter, button, 830 tie-points breadboard, breadboard jumper wires, resistors, LEDs, and a multimeter.</p>
             <p class="normaltext"> All code used to complete this lab was completed in the Arduino IDE and can be viewed on my <a href="https://gist.github.com/sophiahuseby/e423b37a7321c56034175f6cb62b9c45">github</a>.</p>
             <p class="blnormaltext"> Part 1</p>
+            <p class="normaltext"> The first part of this lab was to connect the Arduino Uno board to my computer after grounding myself. I connected the board using a USB cable and USBC converter, and the green power light on the board turned out. This means that power from my computer was being supplied to the board. Then, I connected the board in the Arduino IDE, and used the example blink code to test the board. This code makes the LED on the board blink every second.</p>
+            <p class="normaltext"> The example arduino code that I used for this part can be viewed <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/e423b37a7321c56034175f6cb62b9c45#file-atls-3300-lab-2-part-1-blink-code">here.</a></p>
             <p class="normaltext"> A video of this is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=pNx0AzCJ-Jc">here.</a></p>
             <p class="blnormaltext"> Part 2</p>
-            <p class="normaltext"> A video of this is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=2qpph0tfOW0">here.</a></p>
-            <p class="normaltext"> A video of this is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=IT8tjDXv_ao">here.</a></p>
+            <p class="normaltext"> Next, I had to program the board to blink an external LED that was created in a circuit on my breadboard. I used the digital output on the arduino board to program the LED to be either HIGH or LOW (on or off depending on the voltage (either 5V or 0V)). I then used the digitalWrite function to turn the pin to 5V (turning the LED on). </p>
+            <img class="imageMargin" src="img/circuit1lab2.png">
+            <p class="normaltext"> My code for this part can be viewed <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/e423b37a7321c56034175f6cb62b9c45#file-atls-3300-lab-2-part-2-external-led-blinking-code">here.</a></p>
+            <p class="normaltext"> A video of the external LED blinking every second is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=2qpph0tfOW0">here.</a></p>
+            <p class="normaltext"> Next, I switched the delay time between each blink to be faster (every half second).
+            <p class="normaltext"> My code for this part can be viewed <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/e423b37a7321c56034175f6cb62b9c45#file-atls-3300-lab-2-part-2-external-led-blinking-with-delay-change">here.</a></p>
+            <p class="normaltext"> A video of updated delay time is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=IT8tjDXv_ao">here.</a></p>
             <p class="blnormaltext"> Part 3</p>
+            <p class="normaltext"> After blinking the external LED, I added a digital input button to my circuit. I added a pull-down 10k ohm resistor in order to avoid floating my circuit. When the button is pressed, the circuit is closed and pulled up to 5V, otherwise has a 0V. Arduino is able to detect this button press due to the Serial Monitor. I programmed the arduino to send a message to the serial monitor everytime the button was pressed, which is shown below. </p>
+            <img class="imageMargin" src="img/circuit2lab2.png">
+            <img class="imageMargin" src="img/PART3.png">
+            <p class="normaltext"> My code for this part can be viewed <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/e423b37a7321c56034175f6cb62b9c45#file-atls-3300-lab-2-part-3-hello-world">here.</a></p>
+            <p class="normaltext"> Next, I built on this code in order to test the status of the button. I created code to display "waiting..." when the button is not pressed, and a message saying "success" when the button is pressed. 
+            <p class="normaltext"> My code for this part can be viewed <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/e423b37a7321c56034175f6cb62b9c45#file-atls-3300-lab-2-part-3-waiting-on-button-status">here.</a></p>
+            <p class="normaltext"> A video of this is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=NdYIky1kqfI">here.</a></p>
+            <p class="normaltext"> Sometimes there is a button state that oscillates, even when I press the button once. The button is oscillating because of the manual aspect of the button can bounce up and down (bouncing), causing oscillation when unintended. A technique I could use to fix this would be debouncing. </p>
             <p class="blnormaltext"> Part 4</p>
-            <p class="blnormaltext"> Extra Volt</p>
+            <p class="normaltext"> In the last part of this lab, I created an LED reaction game. The LED in the arduino turns on after a random interval, and the player pressed the button as soon as they see the LED light up. The output of the game is the time that the player took to press the button, which is their score. The game starts with a greeting, asks the player if they are ready, the LED turns on after a random interval between half a second to five seconds, and then once the button is pressed the LED turns off. </p>
+            <p class="normaltext"> The functions I used for my code include the random function to create a random interval, millis function in order to measure the reaction time and time since LED turned on, etc. </p>
+            <img class="imageMargin" src="img/circuitimg1lab2.png">
+            <img class="imageMargin" src="img/circuit2lab2.png">
+            <p class="normaltext"> My code for this part can be viewed <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/e423b37a7321c56034175f6cb62b9c45#file-atls-3300-lab-2-part-4-led-reaction-game">here.</a></p>
+            <p class="normaltext"> A video of this is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=3kokPVafowo">here.</a></p>
           </div>
         </div>
       </div>
