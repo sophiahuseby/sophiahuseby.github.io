@@ -674,6 +674,17 @@ a:hover, a:visited, a:link, a:active
   padding: 30px;
 }
 
+.lab5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  padding: 30px;
+}
+
 .labcontent {
   display: grid;
   grid-template-columns: 1fr 1fr;
