@@ -76,7 +76,7 @@
             </h1>
             <p class="normaltext">This lab was completed on March 6, 2023.</p>
             <p class="blnormaltext"> Overview</p>
-            <p class="normaltext"></p>
+            <p class="normaltext">In this lab, I learned how to use analog outputs through the Arduino. I created complex output from the Arduino visually and auditorily.</p>
             <p class="blnormaltext"> Materials</p>
             <p class="normaltext">The materials used for this lab were:</p>
                 <p class="normaltext">  ↠ Arduino (Elegoo) Uno R3 Controller Board</p>
@@ -84,56 +84,28 @@
                 <p class="normaltext">  ↠ USB Adapter (if you have a USB-C-only laptop)</p>
                 <p class="normaltext">  ↠ Breadboard Jumper Wire</p>
                 <p class="normaltext">  ↠ Resistors</p>
-                <p class="normaltext">  ↠ LEDs</p>
-                <p class="normaltext">  ↠ Potentiometer 10k</p>
+                <p class="normaltext">  ↠ RGB LEDs</p>
+                <p class="normaltext">  ↠ Passive Buzzer </p>
                 <p class="normaltext">  ↠ Joystick Module</p>
                 <p class="normaltext">  ↠ Multimeter</p>
 
-            <p class="blnormaltext"> Part 1: Using a Potentiometer </p>
-            <p class="normaltext">In the first part of this lab, I used a potentiometer to send analog input to the Arduino. A potentiometer is a type of variable resistor that can be rotated or slid to provide a range of analog inputs to the Arduino. For this lab, I used a 10k ohm potentiometer.  </p>
-            <p class="normaltext">My first task was to connect the potentiometer to the Arduino using a circuit (hosted on the breadboard). I had wires connecting 5V and ground to the circuit so that the potentiometer would work.</p>
-            <p class="normaltext">Below is a photo of my circuit. </p>
-            <img class="imageMargin" src="finalimg/circuitlab4.jpg">
-            <img class="imageMargin" src="finalimg/l4part1.png">
-            <p class="normaltext">After everything was connected, the next task was to perform measurements with the analog pins on the Arduino. I did this by coding using analogRead(INPUT_PIN), which allowed me to obtain the value 0-1023 that is measured, which is changing based on the potentiometer manually being spun. </p>
-            <p class="normaltext"> You can view my code <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/a60ecfb794ad7edc0ba7523904f19890#file-atls-3300-lab-4-part-1">here.</a></p>
-            <p class="normaltext"> A video of this is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=-GqmucJGJNc">here.</a></p>
-            <p class="blnormaltext"> Part 2: Light 'Em Up with a Potentiometer</p>
-            <p class="normaltext">In the second part of the lab, I needed to use my potentiometer to create an interactive LED visualization. This interaction was when you spun the potentiometer, one of five lights in a row would light up, and as you spun the potentiometer more and more, each light would turn on until they were all on. If you spun it the opposite way, the lights would one at a time turn off, until they were all off.</p>
-            <p class="normaltext">Below is a photo of the circuit I created to accomplish this.</p>
-            <img class="imageMargin" src="finalimg/l4part2.png">
-            <p class="normaltext"> You can view my code <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/a60ecfb794ad7edc0ba7523904f19890#file-atls-3300-lab-4-part-2">here.</a></p>
-            <p class="normaltext"> A video of this is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=dURrbQc1tk4">here.</a></p>
-            <p class="blnormaltext"> Part 3: Joystick with Arduino </p>
-            <p class="normaltext">In the third part of this lab, I had to connect the joystick to the arduino. The joystick is two potentiometers and a push button combined. The joystick has 5 pins, and we can use these pins to connect to the arduino.</p>
-            <p class="normaltext">Below is a photo of the circuit that I used. </p>
-            <img class="imageMargin" src="finalimg/l4part34.png">
-            <p class="normaltext">The average values for each position are: </p>
-            <p class="normaltext">center = (500, 523)</p>
-            <p class="normaltext">top = (1023, 523)</p>
-            <p class="normaltext">bottom = (0, 523)</p>
-            <p class="normaltext">left = (500, 0)</p>
-            <p class="normaltext">right = (500, 1023)</p>
-            <p class="normaltext">top-left = (1023, 0)</p>
-            <p class="normaltext">top-right = (1023, 1023)</p>
-            <p class="normaltext">bottom-left = (0,0)</p>
-            <p class="normaltext">bottom-right = (0, 1023)</p>
-            <p class="normaltext"> You can view my code <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/a60ecfb794ad7edc0ba7523904f19890#file-atls-3300-lab-4-part-3">here.</a></p>
-            <p class="normaltext"> A video of this is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=RMBzPIXNLWM">here.</a></p>
-            <p class="blnormaltext"> Part 4: Light 'Em Up with a Joystick</p>
-            <p class="normaltext">Next, I rearranged my LEDs to create a plus pattern in the breadboard, emulating the same pattern of positions in the joystick. You can find a photo of this circuit below:</p>
-            <img class="imageMargin" src="finalimg/l4part34.png">
-            <p class="normaltext">Then, I coded the joystick so that when I moved it in each position, the corresponding light would turn on. I coded this using the map() function.</p>
-            <p class="normaltext"> You can view my code <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/a60ecfb794ad7edc0ba7523904f19890#file-atls-3300-lab-4-part-4">here.</a></p>
-            <p class="normaltext"> A video of this is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=du-YDHk4GHw">here.</a></p>
+            <p class="blnormaltext"> Part 1: Wiring Up the RGB LED </p>
+            <p class="normaltext">For each leg, a 220 ohm resistor implementation would be appropriate. </p>
+            <img class="imageMargin" src="finalimg/l5p1whiteLED.png">
+            <img class="imageMargin" src="finalimg/l5p1purpleLED.png">
+            <img class="imageMargin" src="finalimg/l5p1pinkLED.png">
+            <img class="imageMargin" src="finalimg/l5p1blueLED.png">
+            <p class="blnormaltext"> Part 2: Dynamic Color Change with Joystick</p>
             <p class="normaltext"></p>
-            <p class="blnormaltext"> Part 5: Basic LED Whack-a-Mole</p>
-            <p class="normaltext">In the last part of the lab, I had to use the joystick and plus shaped arrangement of lights to create a whack-a-mole game. The game starts with a welcome message, with two long center light blinks. Then, the round starts, and a random light turns on (one of the lights other than the center position) and when you move the joystick to that position it turns off. Each round has 20 lights turn on, and when you successfully "whack" them all, the round ends and it prints the time it took you to complete the round. At the end, it waits three seconds before restarting the round to play again. </p>
-            <p class="normaltext">The code that I created started by defining the outputs. I coded the center light blinks by using digitalWrite(). Then I used millis() as the timer, and used analogRead() in order to check the position of the joystick. Then, it goes through and checks to see if the joystick is in the correct position, and then turns the light off if it is. Finally, the serial monitor prints out the score.   </p>
-            <p class="normaltext"> You can view my code <a target="_blank" rel="noopener noreferrer" href="https://gist.github.com/sophiahuseby/a60ecfb794ad7edc0ba7523904f19890#file-atls-3300-lab-4-part-5">here.</a></p>
-            <p class="normaltext"> A video of this is <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=IP42qpagqqs">here.</a></p>
+            <p class="blnormaltext"> Part 3: Musical Notes with Passive Buzzer </p>
+            <p class="normaltext"></p>
+            <p class="blnormaltext"> Part 4: Melody from the Buzzer</p>
+            <p class="normaltext"></p>
+            <p class="normaltext"></p>
+            <p class="blnormaltext"> Extra Volt</p>
+            <p class="normaltext"></p>
             <p class="blnormaltext"> Conclusion and Reflection</p>
-            <p class="normaltext">I had a pretty easy time with this lab until it got to part 4 and 5. I took some time to learn how to create the circuit for part 4, and really struggled on part 5 until I was able to figure out the code. </p>
+            <p class="normaltext"></p>
           </div>
         </div>
       </div>
