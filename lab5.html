@@ -121,9 +121,14 @@
             <p class="blnormaltext"> Part 3: Musical Notes with Passive Buzzer </p>
             <p class="normaltext">In part three of this lab, I learned how to create different forms of analog output using sound. My arduino has the capability of producing sound through piezo buzzers. For this lab, I used a passive buzzer (which can produce different frequencies), rather than active buzzers (which can only produce one frequency).</p>
             <p class="normaltext">Buzzers have polarity, meaning that their positive pin can only be connected to a positive terminal, and the negative pin can only be connected to a negative terminal. If you were to connect this incorrectly, the buzzer could be damaged permanently.</p>
+            <p class="normaltext">Below is a photo of my circuit that is properly wired.</p>
             <img class="imageMargin" src="finalimg/l5p3.png">
+            <p class="normaltext">In order to produce sound from the buzzer, I used the tone() function, which takes two arguments, pin and freq. Freq is the frequency and pin is the digital pin that the buzzer is connected from. We can also have the argument dur, which is the duration in milliseconds that the sound should play for.</p>
+            <p class="normaltext">The mininum frequency that can be played by tone() is 31hz. We can also use the noTone() function, which stops the tone playing on the buzzer. </p>
+            <p class="normaltext">I created a program that plays a beep of frequency (440hz) on the buzzer for one second, and then pause for one second, and then plays the beep again.</p>
             <script src="https://gist.github.com/sophiahuseby/db1b8cd8977380513b9955af1bf73e1c.js"></script>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/6-wQ7kHti4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="normaltext">After this had been accomplished, we can change the frequency to match the frequency of musical notes played by a piano. For example, A4 is 440 hz. Below is a sketch of the same beep but the frequency matches B3 on the piano.</p>
             <img class="imageMargin" src="finalimg/l5samefolder.png">
             <script src="https://gist.github.com/sophiahuseby/e13f96daa45175a4b11e6cac79740cd7.js"></script>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/3x06kAaiQZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
