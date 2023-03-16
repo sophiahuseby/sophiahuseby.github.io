@@ -98,11 +98,14 @@
             <p class="blnormaltext"> Part 0: Setting up Power</p>
             <p class="normaltext">Before I began using any motors, I needed to set up a power source for them. Motors are too powerful to power using only an Arduino, so this requires the usage of a 9V battery. Trying to power motors from the Arduino can burn out the Arduino pins, and sometimes even the USB port on the computer.</p>
             <p class="normaltext">I used a power supply module to attach to my breadboard to introduce my 9V battery into my circuit. The ground of the motor power and the ground of the Arduino are connected to each other, but the 5V from the Arduino should not be connected to the 5V from the power supply module on the breadboard.</p>
-            <p class="normaltext"></p>
 
             <p class="blnormaltext"> Part 1: Wiring the Servo</p>
-            <p class="normaltext"></p>
-            <p class="normaltext"></p>
+            <p class="normaltext">In the first part of the lab, I connected the servo motor. A servo motor is a type of DC motor that allows control over precise angles. We can use it to rotate 0 to 180º around. I did this by sending a PWM signal to the servo, which consists of three wire connections, power (red), ground (brown), and signal (orange/yellow). After I set up the motor power using the power supply module, I connected the power and ground to the 5V rails. The signal line of the servo connected to a PWM pin on the Arduino. </p>
+            <p class="normaltext">In order to program the servo, I installed the servo.h library, which can be seen below. </p>
+            <p class="normaltext">******** SCREENSHOT</p>
+            <p class="normaltext">In order to start my first program with the servo, I wanted to create a sweeping motion. To do this, I used a code that included the servo.h libarary such as servoA.write() and servoA.attach(). Below you can view my code and sweeping servo.</p>
+            <script src="https://gist.github.com/sophiahuseby/8134d2a433c96794d3401df6249b2ff0.js"></script>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jEvdGPENQls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
             <p class="blnormaltext"> Part 2: Controlling the Servo</p>
             <p class="normaltext"></p>
