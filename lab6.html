@@ -121,13 +121,18 @@
             <p class="normaltext">**** picture of circuit</p>
             <p class="normaltext">**** video of it running</p>
             <p class="normaltext">To rotate the motor in the opposite direction, you have to change the current in the motor. If I were to disconnect the two motor connections from the nreadboard, and put them back in the opposite way, I would see that the motor starts running in the opposite direction. </p>
-            <p class="normaltext">I used a motor driver, which provides the motors with their own power source, while still allowing control from the Arduino. </p>
-            <p class="normaltext">**** circuit</p>
+            <p class="normaltext">I used a motor driver, which provides the motors with their own power source, while still allowing control from the Arduino. The motor driver that I used is the L293D driver, which have control pins which can instantly turn the motor off and on. </p>
+            <p class="normaltext">**** sketch</p>
+            <p class="normaltext">**** video </p>
 
             <p class="blnormaltext"> Part 4: Table-Top Fan</p>
-            <p class="normaltext"></p>
-            <p class="normaltext"></p>
-
+            <p class="normaltext">For the last part of the lab, I constructed a toy fan and wrote code to operate it like an automated table fan. I started by taking the DC motor and attaching it to the shaft of the servo so that rotating teh servo would cause the motor to move as well. </p>
+            <p class="normaltext">**** photo</p>
+            <p class="normaltext">**** photo</p>
+            <p class="normaltext">I wrote a program so that the servo slowly rotates (and hence the body of the DC motor attached to it) from 0° to 120°, and then back to 0°. This movement should be slow, with at least 20ms between each angle step, and should keep repeating inside loop(). Additionally, while the servo is moving back and forth, spin the motor fan continuously at 70% speed. The PWM value appropriate for this speed is 179 out of 255 total power.</p>
+            <p class="normaltext">**** sketch</p>
+            <p class="normaltext">**** video</p>
+            
             <p class="blnormaltext"> Extra Volt</p>
             <p class="normaltext"></p>
             <p class="normaltext"></p>
