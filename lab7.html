@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sophia Huseby Portfolio</title>
+    <link rel="stylesheet" href="final.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrityp="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Yellowtail';font-size: 16px;
+        }
+        </style>
+
+    <link href="//fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <style>
+        body{
+            font-family:'Damion'; font-size: 16px;
+        }
+        </style>
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins:wght@600&display=swap' rel='stylesheet'>
+    <style>
+    body {
+       font-family: 'Poppins';font-size: 22px;
+    }
+
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbarclass">
+      <a href="#home" id="navbarlogo">sophia huseby.</a>
+      <div class="navbarswitch" id="mobilemenu">
+        <span class="bar"></span> 
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbarmenu">
+          <li class="navbaritem">
+              <a href="../index.html" class="navbarpages" id="home">home</a>
+          </li>
+          <li class="navbaritem">
+              <a href="../about.html" class="navbarpages" id="about">about</a>
+          </li>
+          <li class="navbaritem">
+              <a href="../conceptart.html" class="navbarpages" id="conceptart">concept art</a>
+          </li>
+          <li class="navbaritem">
+              <a href="../design.html" class="navbarpages" id="design">design</a>
+          </li>
+          <li class="navbaritem">
+              <a href="../contact.html" class="navbarpages" id="contact">contact</a>
+          </li>
+          <li class="navbaritem">
+            <a href="../objectblog.html" class="navbarpages" id="blog">blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+      <div class="lab" id="lab">
+        <div class="lab3">
+          <div class="labcontent">
+          </div>
+          <div class="labtextcontent">
+            <h1>lab 7 : game/audio controller
+            </h1>
+            <p class="normaltext">This lab was completed on April 5, 2023.</p>
+            <p class="blnormaltext"> Overview</p>
+            <p class="normaltext"></p>
+
+            <p class="blnormaltext"> Materials</p>
+            <p class="normaltext">The materials used for this lab were:</p>
+            <p class="normaltext">↠ Arduino (Elegoo) Uno R3 Controller Board</p>
+            <p class="normaltext">↠ USB Cable</p>
+            <p class="normaltext">↠ USB Adapter (if you have a USB-C-only laptop)</p>
+            <p class="normaltext">↠ Breadboard Jumper Wire</p>
+            <p class="normaltext">↠ Joystick</p>
+            <p class="normaltext">↠ Multimeter</p>
+
+            <p class="blnormaltext"> Part 0: Setting up Processing</p>
+            <p class="normaltext">The first step was to set up processing. I downloaded the software for my Mac OS system.</p>
+            <p class="normaltext">*******</p>
+
+            <p class="blnormaltext"> Part 1: Creating with Processing</p>
+            <p class="normaltext">Processing is a programming environment for creating drawings, animations, and interactive programs. I first wrote a sketch, which creates a window and starts drawing white citcles at the mouse position. Then I changed the ellipse color and size. Both of these results can be seen below.</p>
+*******
+
+            <p class="blnormaltext"> Part 2: Processing with Arduino</p>
+            <p class="normaltext">In the second part of the lab, I controlled the movement of the servo motor using a potentiometer. I moved the servo in sync with the potentiometer, so that when I moved the potentiometer all the way to one side, the servo moves to one side (0º or 180º). The Arduino function that I used to convert the analog potentiometer reading into an angle value that can be sent to the servo was map(). Below is my code and video of this working.</p>
+
+            <p class="blnormaltext"> Part 3: Creating my own Visualization</p>
+            <p class="normaltext">In order to have the servo keep rotating beyond 180º, we need a DC motor. In ordder to run the DC fan motor, I needed to connect the two terminals to power (5V) and ground. I used the power supply module to supply power to the motor. </p>
+
+            <p class="blnormaltext"> Conclusion and Reflection</p>
+            <p class="normaltext">In conclusion, I thought that this was a fun lab, and it was really exciting to see things move! I enjoy being able to really see what I am learning become tangible, and I am excited to learn more that builds off of the foundation that this lab provided me with.</p>
+            <p class="normaltext"></p>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="final.js"></script>
+
+</body>
+</html>
