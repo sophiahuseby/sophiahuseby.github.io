@@ -8,6 +8,29 @@
   /* NAVBAR STYLING */
   
   .navbar {
+    background: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar1 {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar2 {
     background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(250,231,192,1) 34%, rgba(240,80,83,1) 100%);
     height: 80px;
     display: flex;
@@ -18,6 +41,7 @@
     top: 0;
     z-index: 1000;
   }
+
   
   .navbarclass {
     display: flex;
@@ -57,8 +81,34 @@
     height: 80px;
   }
   
-  .navbarpages {
+  .navbarpages2 {
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+    font-family: Poppins;
+    font-size: 16px;
+  }
+
+  .navbarpages {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+    font-family: Poppins;
+    font-size: 16px;
+  }
+
+  .navbarpages1 {
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,7 +205,7 @@
   }
 
   .home {
-    background: rgb(255, 252, 252);
+    /*background: rgb(255, 252, 252);*/
     padding: 200px 0;
   }
   
