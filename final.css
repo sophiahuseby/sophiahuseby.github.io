@@ -943,14 +943,23 @@ a:hover, a:visited, a:link, a:active
 }
 
 */
+.new{
+  background:rgb(247, 245, 240);
+  padding-top: 5rem;
+  padding-left: 1rem;
+  text-align: center;
+  font-size: 25px;
+  font-family: Poppins;
+}
 .featuredprojects {
   background:rgb(247, 245, 240);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-top: 4.5rem;
-  padding-bottom: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 16rem;
+  position: relative;
 
 }
 
@@ -967,7 +976,17 @@ a:hover, a:visited, a:link, a:active
   font-size: 2.0rem;
 }
 
+.imagetest{
+  display: block;
+  width: 100%;
+}
 
+.imgdesc{
+  padding-top: 10px;
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
+}
 
 .featured {
   margin: 10px;
