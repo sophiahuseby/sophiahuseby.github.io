@@ -839,7 +839,7 @@ a:hover, a:visited, a:link, a:active
 
 
 /* FEATURED PROJECTS STYLING */
-
+/*
 .featuredprojects {
   background: whitesmoke;
   padding: 50px 0;
@@ -888,7 +888,7 @@ a:hover, a:visited, a:link, a:active
 @media screen and (max-width: 1100px) {
   .featuredcontent{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 4fr;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -923,5 +923,79 @@ a:hover, a:visited, a:link, a:active
 
   .featuredcontent p {
     margin-top: 2rem;
+  }
+}
+
+.featuredclass {
+  height: 320px;
+  width: 320px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s ease-in;
+}
+
+.featuredclass:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+*/
+.featuredprojects {
+  background:rgb(247, 245, 240);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 4.5rem;
+  padding-bottom: 7rem;
+}
+
+.featured h1 {
+  background-color: rgb(0, 0, 0);
+  
+  background-image: rgba(240,80,83,1);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-top: 0px;
+  margin-bottom: 5rem;
+  font-size: 2.0rem;
+}
+
+
+
+.featured {
+  margin: 10px;
+  height: 320px;
+  width: 320px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: lavender;
+  transition: 0.3s ease-in;
+}
+
+.featured:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .featuredprojects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .featuredprojects {
+    grid-template-columns: 1fr;
   }
 }
