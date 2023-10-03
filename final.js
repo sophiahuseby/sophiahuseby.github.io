@@ -40,3 +40,4 @@ document.getElementById("partner").innerHTML = "PARTNER READING: "
 document.getElementById("future").innerHTML = "FUTURE READING: "
 
 }
+
