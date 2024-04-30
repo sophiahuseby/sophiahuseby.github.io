@@ -1008,15 +1008,25 @@ a:hover, a:visited, a:link, a:active
 
 @media screen and (max-width: 1300px) {
   .featuredprojects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Change to two columns */
-    grid-gap: 20px; /* Adjust the gap between items */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px; /* Adjust the spacing between rows */
+  }
+  
+  .featured {
+    flex-basis: calc(50% - 20px); /* Two images per row with spacing */
   }
 }
 
 @media screen and (max-width: 768px) {
-  .featuredprojects {
-    display: grid;
-    grid-template-columns: 1fr; /* Reset to one column for smaller screens */
+  .featured {
+    flex-basis: 100%; /* Reset to one image per row for smaller screens */
   }
 }
